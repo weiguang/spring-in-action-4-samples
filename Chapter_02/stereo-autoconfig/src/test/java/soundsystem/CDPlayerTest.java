@@ -2,6 +2,7 @@ package soundsystem;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
@@ -32,8 +33,8 @@ public class CDPlayerTest {
   public void play() {
     player.play();
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles",
+        log.getLog().trim());
   }
 
 }
